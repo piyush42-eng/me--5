@@ -1,0 +1,10 @@
+<div id="div1"></div>
+<button onclick="createPara()">Create Paragraph</button>
+
+<script>
+function createPara() {
+  var para = document.createElement("p");
+  para.innerHTML = "New Paragraph Created!";
+  document.getElementById("div1").appendChild(para);
+}
+</script>

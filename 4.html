@@ -1,0 +1,11 @@
+<p class="info">Hello</p>
+<p class="info">World</p>
+
+<button onclick="showClass()">Show Content</button>
+
+<script>
+function showClass() {
+  var x = document.getElementsByClassName("info");
+  alert(x[0].innerHTML + " " + x[1].innerHTML);
+}
+</script>

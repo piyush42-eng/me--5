@@ -1,0 +1,13 @@
+<p id="oldPara">Old Paragraph</p>
+
+<button onclick="replacePara()">Replace</button>
+
+<script>
+function replacePara() {
+  var newPara = document.createElement("p");
+  newPara.innerHTML = "New Paragraph";
+  
+  var oldPara = document.getElementById("oldPara");
+  oldPara.parentNode.replaceChild(newPara, oldPara);
+}
+</script>
